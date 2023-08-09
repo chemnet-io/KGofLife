@@ -1,0 +1,240 @@
+@prefix : <http://kgoflife.aksw.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://kgoflife.aksw.org/ontology#> .
+
+<http://kgoflife.aksw.org/ontology#> rdf:type owl:Ontology ;
+                                        <http://purl.org/dc/terms/creator> "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy" ;
+                                        <http://purl.org/dc/terms/description> "TODO."@en ;
+                                        <http://purl.org/dc/terms/rights> "Copyright © 2023 ChemNet"@en ;
+                                        <http://purl.org/dc/terms/title> "Knowledgraph of Life: The data model for Catalogue of Life Knowledge Graph"@en ;
+                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "kgol" ;
+                                        <http://purl.org/vocab/vann/preferredNamespaceUri> "http://kgoflife.aksw.org/ontology#" ;
+                                        owl:versionInfo "SNAPSHOT" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://kgoflife.aksw.org/ontology#partOfGenus
+:partOfGenus rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Species ;
+                    rdfs:range :Genus ;
+                    rdfs:comment "A species is part of a genus ."@en ;
+                    rdfs:label "part of genus "@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfFamily
+:partOfFamily rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Genus ;
+                    rdfs:range :Family ;
+                    rdfs:comment "A genus is part of a family."@en ;
+                    rdfs:label "part of family "@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfOrder
+:partOfOrder rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Family ;
+                    rdfs:range :Order ;
+                    rdfs:comment "A family is part of a order."@en ;
+                    rdfs:label "part of order "@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfClass
+:partOfClass rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Order ;
+                    rdfs:range :Class ;
+                    rdfs:comment "A order is part of a class ."@en ;
+                    rdfs:label "part of class "@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfPhylum
+:partOfPhylum rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Class ;
+                    rdfs:range :Phylum ;
+                    rdfs:comment "A class is part of a phylum."@en ;
+                    rdfs:label "part of phylum"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfKingdom
+:partOfKingdom rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Phylum ;
+                    rdfs:range :Kingdom ;
+                    rdfs:comment "A phylum is part of a kingdom."@en ;
+                    rdfs:label "part of kingdom"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfDomain
+:partOfDomain rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Kingdom ;
+                    rdfs:range :Domain ;
+                    rdfs:comment "A kingdom is part of a domain."@en ;
+                    rdfs:label "part of domain"@en .
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://kgoflife.aksw.org/ontology#scientificName
+:scientificName rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species, :Genus, :Family, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Given scientific name of a taxonomic rank."@en ;
+                rdfs:label "Scientific name"@en .
+
+###  http://kgoflife.aksw.org/ontology#vernacularName
+:vernacularName rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species, :Genus, :Family, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:range xsd:string ;
+                rdfs:comment "A common or vernacular name."@en ;
+                rdfs:label "Vernacular name"@en .
+
+###  http://kgoflife.aksw.org/ontology#occurrenceStatus
+:occurrenceStatus rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Describes the status between location and the species(e.g. 'native', TODO)."@en ;
+                rdfs:label "Occurrence status"@en .
+
+###  http://kgoflife.aksw.org/ontology#location
+:location rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The country or specific region a species is commonly found in."@en ;
+                rdfs:label "Location"@en .
+
+###  http://kgoflife.aksw.org/ontology#taxonomicStatus
+:taxonomicStatus rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species, :Genus, :Family, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:range xsd:string ;
+                rdfs:comment "TODO."@en ;
+                rdfs:label "TaxonomicStatus"@en .
+
+###  http://kgoflife.aksw.org/ontology#specificEpithet
+:specificEpithet rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The second part of a species scientific name, usually following the name of a genus."@en ;
+                rdfs:label "Specific Epiphet"@en .
+
+###  http://kgoflife.aksw.org/ontology#infraSpecificEpithet
+:infraSpecificEpithet rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The third part of a species scientific name."@en ;
+                rdfs:label "Infra-specific epiphet"@en .
+
+###  http://kgoflife.aksw.org/ontology#nomenclaturalCode
+:nomenclaturalCode rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species, :Genus, :Family, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The nomenclatural code under which a scientific name is constructed."@en ;
+                rdfs:label "Nomenclatural code"@en .
+
+###  http://kgoflife.aksw.org/ontology#nomenclaturalStatus
+:nomenclaturalStatus rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species, :Genus, :Family, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:range xsd:string ;
+                rdfs:comment "TODO."@en ;
+                rdfs:label "Nomenclatural status"@en .
+
+###  http://kgoflife.aksw.org/ontology#nameAccordingTo
+:nameAccordingTo rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species, :Genus, :Family, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:range xsd:string ;
+                rdfs:comment "TODO."@en ;
+                rdfs:label "Name according to"@en .
+
+###  http://kgoflife.aksw.org/ontology#namePublishedIn
+:namePublishedIn rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species, :Genus, :Family, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The article/journal in which the name of the Taxon has been defined."@en ;
+                rdfs:label "Name published in"@en .
+
+###  http://kgoflife.aksw.org/ontology#taxonRemarks
+:taxonRemarks rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species, :Genus, :Family, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Comments about the taxon or name."@en ;
+                rdfs:label "Taxon remarks"@en .
+
+###  http://kgoflife.aksw.org/ontology#references
+:references rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Species, :Genus, :Family, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:range xsd:string ;
+                rdfs:comment "A related resource reference. TODO"@en ;
+                rdfs:label "Taxon remarks"@en .
+                
+
+#################################################################
+#    Classes
+#################################################################
+
+
+###  http://kgoflife.aksw.org/ontology#Species
+:Species rdf:type owl:Class ;
+          rdfs:comment "A species of wildlife."@en ;
+          rdfs:label "Species"@en .
+          
+###  http://kgoflife.aksw.org/ontology#Genus
+:Genus rdf:type owl:Class ;
+          rdfs:comment "A genus of wildlife."@en ;
+          rdfs:label "Genus"@en .
+
+###  http://kgoflife.aksw.org/ontology#Family
+:Family rdf:type owl:Class ;
+          rdfs:comment "A family of wildlife."@en ;
+          rdfs:label "Family"@en .
+
+###  http://kgoflife.aksw.org/ontology#Order
+:Order rdf:type owl:Class ;
+          rdfs:comment "A order of wildlife."@en ;
+          rdfs:label "Order"@en .
+
+###  http://kgoflife.aksw.org/ontology#Class
+:Class rdf:type owl:Class ;
+          rdfs:comment "A class of wildlife."@en ;
+          rdfs:label "Class"@en .
+
+###  http://kgoflife.aksw.org/ontology#Phylum
+:Phylum rdf:type owl:Class ;
+          rdfs:comment "A phylum of wildlife."@en ;
+          rdfs:label "Phylum"@en .
+
+###  http://kgoflife.aksw.org/ontology#Kingdom
+:Kingdom rdf:type owl:Class ;
+          rdfs:comment "A kingdom of wildlife."@en ;
+          rdfs:label "Kingdom"@en .
+
+###  http://kgoflife.aksw.org/ontology#Domain
+:Domain rdf:type owl:Class ;
+          rdfs:comment "A domain of wildlife."@en ;
+          rdfs:label "Domain"@en .
+#################################################################
+#    Annotations
+#################################################################
