@@ -47,145 +47,279 @@
 #    Object Properties
 #################################################################
 
+###  http://kgoflife.aksw.org/ontology#partOfForm
+:partOfForm rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SubForm ;
+                    rdfs:range :Form ;
+                    rdfs:comment "A subform is part of a form."@en ;
+                    rdfs:label "part of form"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSubVariety
+:partOfSubVariety rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Form ;
+                    rdfs:range :SubVariety ;
+                    rdfs:comment "A form is part of a subvariety."@en ;
+                    rdfs:label "part of subvariety"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfVariety
+:partOfVariety rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SubVariety, :Form ;
+                    rdfs:range :Variety ;
+                    rdfs:comment "A subvariety or form is part of a variety."@en ;
+                    rdfs:label "part of variety"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSubSpecies
+:partOfSubSpecies rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Variety, :Form ;
+                    rdfs:range :SubSpecies ;
+                    rdfs:comment "A variety or form is part of a subspecies."@en ;
+                    rdfs:label "part of subspecies"@en .
+
 ###  http://kgoflife.aksw.org/ontology#partOfSpecies
 :partOfSpecies rdf:type owl:ObjectProperty ;
                     rdfs:domain :SubSpecies ;
                     rdfs:range :Species ;
-                    rdfs:comment "A subspecies is part of a species ."@en ;
-                    rdfs:label "part of species "@en .
+                    rdfs:comment "A subspecies is part of a species."@en ;
+                    rdfs:label "part of species"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSubSeries
+:partOfSubSeries rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Species ;
+                    rdfs:range :SubSeries ;
+                    rdfs:comment "A species if part of a subseries."@en ;
+                    rdfs:label "part of subseries"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSeries
+:partOfSeries rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SubSeries, :Species ;
+                    rdfs:range :Series ;
+                    rdfs:comment "A subseries or species is part of a series."@en ;
+                    rdfs:label "part of series"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSubSection
+:partOfSubSection rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Series, :Species ;
+                    rdfs:range :SubSection ;
+                    rdfs:comment "A series or species is part of a subsection."@en ;
+                    rdfs:label "part of subsection"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSection
+:partOfSection rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SubSection, :Series ;
+                    rdfs:range :Section ;
+                    rdfs:comment "A subsection or series is part of a section."@en ;
+                    rdfs:label "part of section"@en .
 
 ###  http://kgoflife.aksw.org/ontology#partOfSubGenus
 :partOfSubGenus rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Species ;
+                    rdfs:domain :Species, :Section ;
                     rdfs:range :SubGenus ;
-                    rdfs:comment "A species can be part of a subgenus ."@en ;
-                    rdfs:label "part of subgenus "@en .
+                    rdfs:comment "A species or section is part of a subgenus."@en ;
+                    rdfs:label "part of subgenus"@en .
 
 ###  http://kgoflife.aksw.org/ontology#partOfGenus
 :partOfGenus rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Species, :SubGenus ;
+                    rdfs:domain :Species, :SubGenus, :Section ;
                     rdfs:range :Genus ;
-                    rdfs:comment "A species or subgenus is part of a genus ."@en ;
-                    rdfs:label "part of genus "@en .
+                    rdfs:comment "A species, subgenus or section is part of a genus."@en ;
+                    rdfs:label "part of genus"@en .
 
 ###  http://kgoflife.aksw.org/ontology#partOfSubTribe
 :partOfSubTribe rdf:type owl:ObjectProperty ;
                     rdfs:domain :Genus ;
                     rdfs:range :SubTribe ;
-                    rdfs:comment "A genus is part of a subtribe ."@en ;
-                    rdfs:label "part of subtribe "@en .
+                    rdfs:comment "A genus is part of a subtribe."@en ;
+                    rdfs:label "part of subtribe"@en .
 
 ###  http://kgoflife.aksw.org/ontology#partOfTribe
 :partOfTribe rdf:type owl:ObjectProperty ;
                     rdfs:domain :SubTribe, :Genus ;
                     rdfs:range :Tribe ;
-                    rdfs:comment "A subtribe or Genus is part of a tribe ."@en ;
-                    rdfs:label "part of tribe "@en .
+                    rdfs:comment "A subtribe or Genus is part of a tribe."@en ;
+                    rdfs:label "part of tribe"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSuperTribe
+:partOfSuperTribe rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Tribe ;
+                    rdfs:range :SuperTribe ;
+                    rdfs:comment "A subtribe or Genus is part of a tribe."@en ;
+                    rdfs:label "part of supertribe"@en .
 
 ###  http://kgoflife.aksw.org/ontology#partOfSubFamily
 :partOfSubFamily rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Genus, :Tribe ;
+                    rdfs:domain :Genus, :Tribe, :SuperTribe ;
                     rdfs:range :SubFamily ;
-                    rdfs:comment "A genus or Tribe is part of a subfamily."@en ;
-                    rdfs:label "part of subfamily "@en .
+                    rdfs:comment "A genus or Tribe/supertribe is part of a subfamily."@en ;
+                    rdfs:label "part of subfamily"@en .
 
 ###  http://kgoflife.aksw.org/ontology#partOfFamily
 :partOfFamily rdf:type owl:ObjectProperty ;
                     rdfs:domain :Genus, :SubFamily ;
                     rdfs:range :Family ;
                     rdfs:comment "A genus or subfamily is part of a family."@en ;
-                    rdfs:label "part of family "@en .
+                    rdfs:label "part of family"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfEpiFamily
+:partOfEpiFamily rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Family ;
+                    rdfs:range :EpiFamily ;
+                    rdfs:comment "A family is part of a epifamily."@en ;
+                    rdfs:label "part of epifamily"@en .
 
 ###  http://kgoflife.aksw.org/ontology#partOfSuperFamily
 :partOfSuperFamily rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Family ;
+                    rdfs:domain :Family, :EpiFamily ;
                     rdfs:range :SuperFamily ;
-                    rdfs:comment "A family is part of a superfamily."@en ;
-                    rdfs:label "part of superfamily "@en .
+                    rdfs:comment "A family or epifamily is part of a superfamily."@en ;
+                    rdfs:label "part of superfamily"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfParvOrder
+:partOfParvOrder rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Family, :SuperFamily ;
+                    rdfs:range :ParvOrder ;
+                    rdfs:comment "A family or superfamily is part of a parvorder."@en ;
+                    rdfs:label "part of parvorder"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfInfraOrder
+:partOfInfraOrder rdf:type owl:ObjectProperty ;
+                    rdfs:domain :ParvOrder ;
+                    rdfs:range :InfraOrder ;
+                    rdfs:comment "A parvorder is part of a infraorder."@en ;
+                    rdfs:label "part of infraorder"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSubOrder
+:partOfSubOrder rdf:type owl:ObjectProperty ;
+                    rdfs:domain :InfraOrder ;
+                    rdfs:range :SubOrder ;
+                    rdfs:comment "A infraorder is part of a suborder."@en ;
+                    rdfs:label "part of suborder"@en .
 
 ###  http://kgoflife.aksw.org/ontology#partOfOrder
 :partOfOrder rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Family, :SuperFamily ;
+                    rdfs:domain :SubOrder, :Family, :SuperFamily ;
                     rdfs:range :Order ;
-                    rdfs:comment "A family or superfamily is part of a order."@en ;
-                    rdfs:label "part of order "@en .
+                    rdfs:comment "A suborder, family or superfamily is part of a order."@en ;
+                    rdfs:label "part of order"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSuperOrder
+:partOfSuperOrder rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Order ;
+                    rdfs:range :SuperOrder ;
+                    rdfs:comment "A order is part of a superorder."@en ;
+                    rdfs:label "part of superorder"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSubterClass
+:partOfSubterClass rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Order, :SuperOrder ;
+                    rdfs:range :SubterClass ;
+                    rdfs:comment "A order or parvclass is part of a subterclass."@en ;
+                    rdfs:label "part of subterclass"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfInfraClass
+:partOfInfraClass rdf:type owl:ObjectProperty ;
+                    rdfs:domain :SubterClass ;
+                    rdfs:range :InfraClass ;
+                    rdfs:comment "A subterclass is part of a infraclass."@en ;
+                    rdfs:label "part of infraclass"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSubClass
+:partOfSubClass rdf:type owl:ObjectProperty ;
+                    rdfs:domain :InfraClass ;
+                    rdfs:range :SubClass ;
+                    rdfs:comment "A infraclass is part of a subclass."@en ;
+                    rdfs:label "part of subclass"@en .
 
 ###  http://kgoflife.aksw.org/ontology#partOfClass
 :partOfClass rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Order ;
+                    rdfs:domain :Order, :SuperOrder, :SubClass ;
                     rdfs:range :Class ;
-                    rdfs:comment "A order is part of a class ."@en ;
-                    rdfs:label "part of class "@en .
+                    rdfs:comment "A order or subclass is part of a class."@en ;
+                    rdfs:label "part of class"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSuperClass
+:partOfSuperClass rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Class ;
+                    rdfs:range :SuperClass ;
+                    rdfs:comment "A class is part of a superclass."@en ;
+                    rdfs:label "part of superclass"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSubPhylum
+:partOfSubPhylum rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Class, :SuperClass ;
+                    rdfs:range :SubPhylum ;
+                    rdfs:comment "A class is part of a subphylum."@en ;
+                    rdfs:label "part of subphylum"@en .
 
 ###  http://kgoflife.aksw.org/ontology#partOfPhylum
 :partOfPhylum rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Class ;
+                    rdfs:domain :Class, :SuperClass, :SubPhylum ;
                     rdfs:range :Phylum ;
-                    rdfs:comment "A class is part of a phylum."@en ;
+                    rdfs:comment "A class or subphylum is part of a phylum."@en ;
                     rdfs:label "part of phylum"@en .
+
+###  http://kgoflife.aksw.org/ontology#partOfSubKingdom
+:partOfSubKingdom rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Phylum ;
+                    rdfs:range :SubKingdom ;
+                    rdfs:comment "A phylum is part of a subkingdom."@en ;
+                    rdfs:label "part of subkingdom"@en .
 
 ###  http://kgoflife.aksw.org/ontology#partOfKingdom
 :partOfKingdom rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Phylum ;
+                    rdfs:domain :Phylum, :SubKingdom ;
                     rdfs:range :Kingdom ;
-                    rdfs:comment "A phylum is part of a kingdom."@en ;
+                    rdfs:comment "A phylum or subkingdom is part of a kingdom."@en ;
                     rdfs:label "part of kingdom"@en .
 
-###  http://kgoflife.aksw.org/ontology#partOfDomain
-:partOfDomain rdf:type owl:ObjectProperty ;
-                    rdfs:domain :Kingdom ;
-                    rdfs:range :Domain ;
-                    rdfs:comment "A kingdom is part of a domain."@en ;
-                    rdfs:label "part of domain"@en .
 #################################################################
 #    Data properties
 #################################################################
 
 ###  http://kgoflife.aksw.org/ontology#scientificName
 :scientificName rdf:type owl:DatatypeProperty ;
-                rdfs:domain :SubSpecies, :Species, :SubGenus, :Genus, :SubTribe, :Tribe, :SubFamily, :Family, :SuperFamily, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:domain :SubForm, :Form, :SubVariety, :Variety, :SubSpecies, :Species, :SubSeries, :Series, :SubSection, :Section, :SubGenus, :Genus, :SubTribe, :Tribe, :SuperTribe,  :SubFamily, :Family, :EpiFamily, :SuperFamily, :ParvOrder, :InfraOrder, :SubOrder, :Order, :SuperOrder, :SubterClass, :InfraClass, :SubClass, :Class, :SuperClass, :SubPhylum,  :Phylum, :SubKingdom, :Kingdom, :Unranked ;
                 rdfs:range xsd:string ;
                 rdfs:comment "Given scientific name of a taxonomic rank."@en ;
                 rdfs:label "Scientific name"@en .
 
 ###  http://kgoflife.aksw.org/ontology#vernacularName
 :vernacularName rdf:type owl:DatatypeProperty ;
-                rdfs:domain :SubSpecies, :Species, :SubGenus, :Genus, :SubTribe, :Tribe, :SubFamily, :Family, :SuperFamily, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:domain :SubForm, :Form, :SubVariety, :Variety, :SubSpecies, :Species, :SubSeries, :Series, :SubSection, :Section, :SubGenus, :Genus, :SubTribe, :Tribe, :SuperTribe,  :SubFamily, :Family, :EpiFamily, :SuperFamily, :ParvOrder, :InfraOrder, :SubOrder, :Order, :SuperOrder, :SubterClass, :InfraClass, :SubClass, :Class, :SuperClass, :SubPhylum,  :Phylum, :SubKingdom, :Kingdom, :Unranked ;
                 rdfs:range xsd:string ;
                 rdfs:comment "A common or vernacular name."@en ;
                 rdfs:label "Vernacular name"@en .
 
 ###  http://kgoflife.aksw.org/ontology#occurrenceStatus
 :occurrenceStatus rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Species ;
+                rdfs:domain :Species, :Unranked ;
                 rdfs:range xsd:string ;
                 rdfs:comment "Describes the status between location and the species(e.g. 'native', TODO)."@en ;
                 rdfs:label "Occurrence status"@en .
 
 ###  http://kgoflife.aksw.org/ontology#ecosystem
 :ecosystem rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Species ;
+                rdfs:domain :Species, :Unranked ;
                 rdfs:range xsd:string ;
                 rdfs:comment "Describes if the species is a marine, terrestrial or freshwater species."@en ;
                 rdfs:label "ecosystem"@en .
 
 ###  http://kgoflife.aksw.org/ontology#extinctionStatus
 :extinctionStatus rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Species ;
+                rdfs:domain :Species, :Unranked ;
                 rdfs:range xsd:boolean ;
                 rdfs:comment "Describes if the species is extinct or not."@en ;
                 rdfs:label "Extinction status"@en .
 
 ###  http://kgoflife.aksw.org/ontology#location
 :location rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Species ;
+                rdfs:domain :Species, :Unranked ;
                 rdfs:range xsd:string ;
                 rdfs:comment "The country or specific region a species is commonly found in."@en ;
                 rdfs:label "Location"@en .
 
 ###  http://kgoflife.aksw.org/ontology#taxonomicStatus
 :taxonomicStatus rdf:type owl:DatatypeProperty ;
-                rdfs:domain :SubSpecies, :Species, :SubGenus, :Genus, :SubTribe, :Tribe, :SubFamily, :Family, :SuperFamily, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:domain :SubForm, :Form, :SubVariety, :Variety, :SubSpecies, :Species, :SubSeries, :Series, :SubSection, :Section, :SubGenus, :Genus, :SubTribe, :Tribe, :SuperTribe,  :SubFamily, :Family, :EpiFamily, :SuperFamily, :ParvOrder, :InfraOrder, :SubOrder, :Order, :SuperOrder, :SubterClass, :InfraClass, :SubClass, :Class, :SuperClass, :SubPhylum,  :Phylum, :SubKingdom, :Kingdom, :Unranked ;
                 rdfs:range xsd:string ;
                 rdfs:comment "TODO."@en ;
                 rdfs:label "TaxonomicStatus"@en .
@@ -206,42 +340,42 @@
 
 ###  http://kgoflife.aksw.org/ontology#nomenclaturalCode
 :nomenclaturalCode rdf:type owl:DatatypeProperty ;
-                rdfs:domain :SubSpecies, :Species, :SubGenus, :Genus, :SubTribe, :Tribe, :SubFamily, :Family, :SuperFamily, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:domain :SubForm, :Form, :SubVariety, :Variety, :SubSpecies, :Species, :SubSeries, :Series, :SubSection, :Section, :SubGenus, :Genus, :SubTribe, :Tribe, :SuperTribe,  :SubFamily, :Family, :EpiFamily, :SuperFamily, :ParvOrder, :InfraOrder, :SubOrder, :Order, :SuperOrder, :SubterClass, :InfraClass, :SubClass, :Class, :SuperClass, :SubPhylum,  :Phylum, :SubKingdom, :Kingdom, :Unranked ;
                 rdfs:range xsd:string ;
                 rdfs:comment "The nomenclatural code under which a scientific name is constructed."@en ;
                 rdfs:label "Nomenclatural code"@en .
 
 ###  http://kgoflife.aksw.org/ontology#nomenclaturalStatus
 :nomenclaturalStatus rdf:type owl:DatatypeProperty ;
-                rdfs:domain :SubSpecies, :Species, :SubGenus, :Genus, :SubTribe, :Tribe, :SubFamily, :Family, :SuperFamily, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:domain :SubForm, :Form, :SubVariety, :Variety, :SubSpecies, :Species, :SubSeries, :Series, :SubSection, :Section, :SubGenus, :Genus, :SubTribe, :Tribe, :SuperTribe,  :SubFamily, :Family, :EpiFamily, :SuperFamily, :ParvOrder, :InfraOrder, :SubOrder, :Order, :SuperOrder, :SubterClass, :InfraClass, :SubClass, :Class, :SuperClass, :SubPhylum,  :Phylum, :SubKingdom, :Kingdom, :Unranked ;
                 rdfs:range xsd:string ;
                 rdfs:comment "TODO."@en ;
                 rdfs:label "Nomenclatural status"@en .
 
 ###  http://kgoflife.aksw.org/ontology#nameAccordingTo
 :nameAccordingTo rdf:type owl:DatatypeProperty ;
-                rdfs:domain :SubSpecies, :Species, :SubGenus, :Genus, :SubTribe, :Tribe, :SubFamily, :Family, :SuperFamily, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:domain :SubForm, :Form, :SubVariety, :Variety, :SubSpecies, :Species, :SubSeries, :Series, :SubSection, :Section, :SubGenus, :Genus, :SubTribe, :Tribe, :SuperTribe,  :SubFamily, :Family, :EpiFamily, :SuperFamily, :ParvOrder, :InfraOrder, :SubOrder, :Order, :SuperOrder, :SubterClass, :InfraClass, :SubClass, :Class, :SuperClass, :SubPhylum,  :Phylum, :SubKingdom, :Kingdom, :Unranked ;
                 rdfs:range xsd:string ;
                 rdfs:comment "TODO."@en ;
                 rdfs:label "Name according to"@en .
 
 ###  http://kgoflife.aksw.org/ontology#namePublishedIn
 :namePublishedIn rdf:type owl:DatatypeProperty ;
-                rdfs:domain :SubSpecies, :Species, :SubGenus, :Genus, :SubTribe, :Tribe, :SubFamily, :Family, :SuperFamily, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:domain :SubForm, :Form, :SubVariety, :Variety, :SubSpecies, :Species, :SubSeries, :Series, :SubSection, :Section, :SubGenus, :Genus, :SubTribe, :Tribe, :SuperTribe,  :SubFamily, :Family, :EpiFamily, :SuperFamily, :ParvOrder, :InfraOrder, :SubOrder, :Order, :SuperOrder, :SubterClass, :InfraClass, :SubClass, :Class, :SuperClass, :SubPhylum,  :Phylum, :SubKingdom, :Kingdom, :Unranked ;
                 rdfs:range xsd:string ;
                 rdfs:comment "The article/journal in which the name of the Taxon has been defined."@en ;
                 rdfs:label "Name published in"@en .
 
 ###  http://kgoflife.aksw.org/ontology#taxonRemarks
 :taxonRemarks rdf:type owl:DatatypeProperty ;
-                rdfs:domain :SubSpecies, :Species, :SubGenus, :Genus, :SubTribe, :Tribe, :SubFamily, :Family, :SuperFamily, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:domain :SubForm, :Form, :SubVariety, :Variety, :SubSpecies, :Species, :SubSeries, :Series, :SubSection, :Section, :SubGenus, :Genus, :SubTribe, :Tribe, :SuperTribe,  :SubFamily, :Family, :EpiFamily, :SuperFamily, :ParvOrder, :InfraOrder, :SubOrder, :Order, :SuperOrder, :SubterClass, :InfraClass, :SubClass, :Class, :SuperClass, :SubPhylum,  :Phylum, :SubKingdom, :Kingdom, :Unranked ;
                 rdfs:range xsd:string ;
                 rdfs:comment "Comments about the taxon or name."@en ;
                 rdfs:label "Taxon remarks"@en .
 
 ###  http://kgoflife.aksw.org/ontology#references
 :references rdf:type owl:DatatypeProperty ;
-                rdfs:domain :SubSpecies, :Species, :SubGenus, :Genus, :SubTribe, :Tribe, :SubFamily, :Family, :SuperFamily, :Order, :Class, :Phylum, :Kingdom ;
+                rdfs:domain :SubForm, :Form, :SubVariety, :Variety, :SubSpecies, :Species, :SubSeries, :Series, :SubSection, :Section, :SubGenus, :Genus, :SubTribe, :Tribe, :SuperTribe,  :SubFamily, :Family, :EpiFamily, :SuperFamily, :ParvOrder, :InfraOrder, :SubOrder, :Order, :SuperOrder, :SubterClass, :InfraClass, :SubClass, :Class, :SuperClass, :SubPhylum,  :Phylum, :SubKingdom, :Kingdom, :Unranked ;
                 rdfs:range xsd:string ;
                 rdfs:comment "A related resource reference. TODO"@en ;
                 rdfs:label "References"@en .
@@ -251,75 +385,175 @@
 #    Classes
 #################################################################
 
+###  http://kgoflife.aksw.org/ontology#SubForm
+:SubForm rdf:type owl:Class ;
+          rdfs:comment "A subform of life. Used in botany."@en ;
+          rdfs:label "Subform"@en .
+
+###  http://kgoflife.aksw.org/ontology#Form
+:Form rdf:type owl:Class ;
+          rdfs:comment "A form of life. Used in botany."@en ;
+          rdfs:label "Form"@en .
+
+###  http://kgoflife.aksw.org/ontology#SubVariety
+:SubVariety rdf:type owl:Class ;
+          rdfs:comment "A subvariety of life. Used in botany."@en ;
+          rdfs:label "Subvariety"@en .
+
+###  http://kgoflife.aksw.org/ontology#Variety
+:Variety rdf:type owl:Class ;
+          rdfs:comment "A variety of life. Also referred to as form or morph in zoology or aberation in lepidopterology."@en ;
+          rdfs:label "Variety"@en .
+
 ###  http://kgoflife.aksw.org/ontology#SubSpecies
 :SubSpecies rdf:type owl:Class ;
-          rdfs:comment "A subspecies of wildlife."@en ;
+          rdfs:comment "A subspecies of life. Also referred to as forma specialis for fungi or pathovar for bacteria. Also formerly used term proles."@en ;
           rdfs:label "Subspecies"@en .
 
 ###  http://kgoflife.aksw.org/ontology#Species
 :Species rdf:type owl:Class ;
-          rdfs:comment "A species of wildlife."@en ;
+          rdfs:comment "A species of life. Used in botany."@en ;
           rdfs:label "Species"@en .
+
+###  http://kgoflife.aksw.org/ontology#SubSeries
+:SubSeries rdf:type owl:Class ;
+          rdfs:comment "A subseries of life. Used in botany."@en ;
+          rdfs:label "Subseries"@en .
+
+###  http://kgoflife.aksw.org/ontology#Series
+:Series rdf:type owl:Class ;
+          rdfs:comment "A series of life. Used in botany."@en ;
+          rdfs:label "Series"@en .
+
+###  http://kgoflife.aksw.org/ontology#SubSection
+:SubSection rdf:type owl:Class ;
+          rdfs:comment "A subsection of life. Used in botany."@en ;
+          rdfs:label "Subsection"@en .
+
+###  http://kgoflife.aksw.org/ontology#Section
+:Section rdf:type owl:Class ;
+          rdfs:comment "A section of life."@en ;
+          rdfs:label "Section"@en .
 
 ###  http://kgoflife.aksw.org/ontology#SubGenus
 :SubGenus rdf:type owl:Class ;
-          rdfs:comment "A subgenus of wildlife."@en ;
+          rdfs:comment "A subgenus of life."@en ;
           rdfs:label "Subgenus"@en .
           
 ###  http://kgoflife.aksw.org/ontology#Genus
 :Genus rdf:type owl:Class ;
-          rdfs:comment "A genus of wildlife."@en ;
+          rdfs:comment "A genus of life."@en ;
           rdfs:label "Genus"@en .
 
 ###  http://kgoflife.aksw.org/ontology#SubTribe
 :SubTribe rdf:type owl:Class ;
-          rdfs:comment "A subtribe of wildlife."@en ;
+          rdfs:comment "A subtribe of life."@en ;
           rdfs:label "Subtribe"@en .
 
 ###  http://kgoflife.aksw.org/ontology#Tribe
 :Tribe rdf:type owl:Class ;
-          rdfs:comment "A tribe of wildlife."@en ;
+          rdfs:comment "A tribe of life."@en ;
           rdfs:label "Tribe"@en .
+
+###  http://kgoflife.aksw.org/ontology#SuperTribe
+:SuperTribe rdf:type owl:Class ;
+          rdfs:comment "A supertribe of life."@en ;
+          rdfs:label "SuperTribe"@en .
 
 ###  http://kgoflife.aksw.org/ontology#SubFamily
 :SubFamily rdf:type owl:Class ;
-          rdfs:comment "A subfamily of wildlife."@en ;
+          rdfs:comment "A subfamily of life."@en ;
           rdfs:label "Subfamily"@en .
 
 ###  http://kgoflife.aksw.org/ontology#Family
 :Family rdf:type owl:Class ;
-          rdfs:comment "A family of wildlife."@en ;
+          rdfs:comment "A family of life."@en ;
           rdfs:label "Family"@en .
+
+###  http://kgoflife.aksw.org/ontology#EpiFamily
+:EpiFamily rdf:type owl:Class ;
+          rdfs:comment "A epifamily of life. Used in zoology."@en ;
+          rdfs:label "EpiFamily"@en .
 
 ###  http://kgoflife.aksw.org/ontology#SuperFamily
 :SuperFamily rdf:type owl:Class ;
-          rdfs:comment "A superfamily of wildlife."@en ;
+          rdfs:comment "A superfamily of life."@en ;
           rdfs:label "Superfamily"@en .
+
+###  http://kgoflife.aksw.org/ontology#ParvOrder
+:ParvOrder rdf:type owl:Class ;
+          rdfs:comment "A parvorder of life. Also referred to as microorder in zoology."@en ;
+          rdfs:label "Parvorder"@en .
+
+###  http://kgoflife.aksw.org/ontology#InfraOrder
+:InfraOrder rdf:type owl:Class ;
+          rdfs:comment "A infraorder of life."@en ;
+          rdfs:label "Infraorder"@en .
+
+###  http://kgoflife.aksw.org/ontology#SubOrder
+:SubOrder rdf:type owl:Class ;
+          rdfs:comment "A suborder of life."@en ;
+          rdfs:label "Suborder"@en .
 
 ###  http://kgoflife.aksw.org/ontology#Order
 :Order rdf:type owl:Class ;
-          rdfs:comment "A order of wildlife."@en ;
+          rdfs:comment "A order of life."@en ;
           rdfs:label "Order"@en .
+
+###  http://kgoflife.aksw.org/ontology#SuperOrder
+:SuperOrder rdf:type owl:Class ;
+          rdfs:comment "A superorder of life."@en ;
+          rdfs:label "Superorder"@en .
+
+###  http://kgoflife.aksw.org/ontology#SubterClass
+:SubterClass rdf:type owl:Class ;
+          rdfs:comment "A subterclass of life."@en ;
+          rdfs:label "Subterclass"@en .
+
+###  http://kgoflife.aksw.org/ontology#InfraClass
+:InfraClass rdf:type owl:Class ;
+          rdfs:comment "A infraclass of life."@en ;
+          rdfs:label "Infraclass"@en .
+
+###  http://kgoflife.aksw.org/ontology#SubClass
+:SubClass rdf:type owl:Class ;
+          rdfs:comment "A subclass of life."@en ;
+          rdfs:label "Subclass"@en .
 
 ###  http://kgoflife.aksw.org/ontology#Class
 :Class rdf:type owl:Class ;
-          rdfs:comment "A class of wildlife."@en ;
+          rdfs:comment "A class of life."@en ;
           rdfs:label "Class"@en .
+
+###  http://kgoflife.aksw.org/ontology#SuperClass
+:SuperClass rdf:type owl:Class ;
+          rdfs:comment "A superclass of life."@en ;
+          rdfs:label "Superclass"@en .
+
+###  http://kgoflife.aksw.org/ontology#SubPhylum
+:SubPhylum rdf:type owl:Class ;
+          rdfs:comment "A subphylum of life."@en ;
+          rdfs:label "Subphylum"@en .
 
 ###  http://kgoflife.aksw.org/ontology#Phylum
 :Phylum rdf:type owl:Class ;
-          rdfs:comment "A phylum of wildlife."@en ;
+          rdfs:comment "A phylum of life."@en ;
           rdfs:label "Phylum"@en .
+
+###  http://kgoflife.aksw.org/ontology#SubKingdom
+:SubKingdom rdf:type owl:Class ;
+          rdfs:comment "A subkingdom of life."@en ;
+          rdfs:label "Subkingdom"@en .
 
 ###  http://kgoflife.aksw.org/ontology#Kingdom
 :Kingdom rdf:type owl:Class ;
-          rdfs:comment "A kingdom of wildlife."@en ;
+          rdfs:comment "A kingdom of life."@en ;
           rdfs:label "Kingdom"@en .
 
-###  http://kgoflife.aksw.org/ontology#Domain
-:Domain rdf:type owl:Class ;
-          rdfs:comment "A domain of wildlife."@en ;
-          rdfs:label "Domain"@en .
+###  http://kgoflife.aksw.org/ontology#Unranked
+:Unranked rdf:type owl:Class ;
+          rdfs:comment "A unranked taxa of life."@en ;
+          rdfs:label "Unranked"@en .
 #################################################################
 #    Annotations
 #################################################################
