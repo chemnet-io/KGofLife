@@ -6,12 +6,12 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <http://kgoflife.aksw.org/ontology#> .
 
-<http://kgoflife.aksw.org/ontology#> rdf:type owl:Ontology ;
+                                        <http://kgoflife.aksw.org/ontology#> rdf:type owl:Ontology ;
                                         <http://purl.org/dc/terms/creator> "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy" ;
-                                        <http://purl.org/dc/terms/description> "TODO."@en ;
+                                        <http://purl.org/dc/terms/description> "KG of Life is facilitating the whole taxonomic tree of life into a semantic web usable version."@en ;
                                         <http://purl.org/dc/terms/rights> "Copyright © 2023 ChemNet"@en ;
-                                        <http://purl.org/dc/terms/title> "kgol: The data model for Catalogue of Life Knowledge Graph"@en ;
-                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "kgol" ;
+                                        <http://purl.org/dc/terms/title> "kglife: The data model for Catalogue of Life Knowledge Graph"@en ;
+                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "kglife" ;
                                         <http://purl.org/vocab/vann/preferredNamespaceUri> "http://kgoflife.aksw.org/ontology#" ;
                                         owl:versionInfo "SNAPSHOT" .
 
