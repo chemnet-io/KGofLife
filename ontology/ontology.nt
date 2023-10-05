@@ -1,0 +1,886 @@
+<http://kgoflife.aksw.org/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://kgoflife.aksw.org/ontology#> <http://purl.org/dc/terms/creator> "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy" .
+<http://kgoflife.aksw.org/ontology#> <http://purl.org/dc/terms/description> "KG of Life is facilitating the whole taxonomic tree of life into a semantic web usable version."@en .
+<http://kgoflife.aksw.org/ontology#> <http://purl.org/dc/terms/rights> "Copyright © 2023 ChemNet"@en .
+<http://kgoflife.aksw.org/ontology#> <http://purl.org/dc/terms/title> "kglife: The data model for Catalogue of Life Knowledge Graph"@en .
+<http://kgoflife.aksw.org/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "kglife" .
+<http://kgoflife.aksw.org/ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://kgoflife.aksw.org/ontology#" .
+<http://kgoflife.aksw.org/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "SNAPSHOT" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://kgoflife.aksw.org/ontology#partOfClass
+<http://kgoflife.aksw.org/ontology#partOfClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#partOfClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubClass> .
+<http://kgoflife.aksw.org/ontology#partOfClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperOrder> .
+<http://kgoflife.aksw.org/ontology#partOfClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#partOfClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A order or subclass is part of a class."@en .
+<http://kgoflife.aksw.org/ontology#partOfClass> <http://www.w3.org/2000/01/rdf-schema#label> "part of class"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfEpiFamily
+<http://kgoflife.aksw.org/ontology#partOfEpiFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfEpiFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#partOfEpiFamily> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#EpiFamily> .
+<http://kgoflife.aksw.org/ontology#partOfEpiFamily> <http://www.w3.org/2000/01/rdf-schema#comment> "A family is part of a epifamily."@en .
+<http://kgoflife.aksw.org/ontology#partOfEpiFamily> <http://www.w3.org/2000/01/rdf-schema#label> "part of epifamily"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfFamily
+<http://kgoflife.aksw.org/ontology#partOfFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#partOfFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubFamily> .
+<http://kgoflife.aksw.org/ontology#partOfFamily> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#partOfFamily> <http://www.w3.org/2000/01/rdf-schema#comment> "A genus or subfamily is part of a family."@en .
+<http://kgoflife.aksw.org/ontology#partOfFamily> <http://www.w3.org/2000/01/rdf-schema#label> "part of family"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfForm
+<http://kgoflife.aksw.org/ontology#partOfForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfForm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubForm> .
+<http://kgoflife.aksw.org/ontology#partOfForm> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#partOfForm> <http://www.w3.org/2000/01/rdf-schema#comment> "A subform is part of a form."@en .
+<http://kgoflife.aksw.org/ontology#partOfForm> <http://www.w3.org/2000/01/rdf-schema#label> "part of form"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfGenus
+<http://kgoflife.aksw.org/ontology#partOfGenus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfGenus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Section> .
+<http://kgoflife.aksw.org/ontology#partOfGenus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#partOfGenus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubGenus> .
+<http://kgoflife.aksw.org/ontology#partOfGenus> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#partOfGenus> <http://www.w3.org/2000/01/rdf-schema#comment> "A species, subgenus or section is part of a genus."@en .
+<http://kgoflife.aksw.org/ontology#partOfGenus> <http://www.w3.org/2000/01/rdf-schema#label> "part of genus"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfInfraClass
+<http://kgoflife.aksw.org/ontology#partOfInfraClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfInfraClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubterClass> .
+<http://kgoflife.aksw.org/ontology#partOfInfraClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#InfraClass> .
+<http://kgoflife.aksw.org/ontology#partOfInfraClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A subterclass is part of a infraclass."@en .
+<http://kgoflife.aksw.org/ontology#partOfInfraClass> <http://www.w3.org/2000/01/rdf-schema#label> "part of infraclass"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfInfraOrder
+<http://kgoflife.aksw.org/ontology#partOfInfraOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfInfraOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#ParvOrder> .
+<http://kgoflife.aksw.org/ontology#partOfInfraOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#InfraOrder> .
+<http://kgoflife.aksw.org/ontology#partOfInfraOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "A parvorder is part of a infraorder."@en .
+<http://kgoflife.aksw.org/ontology#partOfInfraOrder> <http://www.w3.org/2000/01/rdf-schema#label> "part of infraorder"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfKingdom
+<http://kgoflife.aksw.org/ontology#partOfKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfKingdom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Phylum> .
+<http://kgoflife.aksw.org/ontology#partOfKingdom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubKingdom> .
+<http://kgoflife.aksw.org/ontology#partOfKingdom> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#Kingdom> .
+<http://kgoflife.aksw.org/ontology#partOfKingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "A phylum or subkingdom is part of a kingdom."@en .
+<http://kgoflife.aksw.org/ontology#partOfKingdom> <http://www.w3.org/2000/01/rdf-schema#label> "part of kingdom"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfOrder
+<http://kgoflife.aksw.org/ontology#partOfOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#partOfOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubOrder> .
+<http://kgoflife.aksw.org/ontology#partOfOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperFamily> .
+<http://kgoflife.aksw.org/ontology#partOfOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#partOfOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "A suborder, family or superfamily is part of a order."@en .
+<http://kgoflife.aksw.org/ontology#partOfOrder> <http://www.w3.org/2000/01/rdf-schema#label> "part of order"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfParvOrder
+<http://kgoflife.aksw.org/ontology#partOfParvOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfParvOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#partOfParvOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperFamily> .
+<http://kgoflife.aksw.org/ontology#partOfParvOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#ParvOrder> .
+<http://kgoflife.aksw.org/ontology#partOfParvOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "A family or superfamily is part of a parvorder."@en .
+<http://kgoflife.aksw.org/ontology#partOfParvOrder> <http://www.w3.org/2000/01/rdf-schema#label> "part of parvorder"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfPhylum
+<http://kgoflife.aksw.org/ontology#partOfPhylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfPhylum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#partOfPhylum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubPhylum> .
+<http://kgoflife.aksw.org/ontology#partOfPhylum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperClass> .
+<http://kgoflife.aksw.org/ontology#partOfPhylum> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#Phylum> .
+<http://kgoflife.aksw.org/ontology#partOfPhylum> <http://www.w3.org/2000/01/rdf-schema#comment> "A class or subphylum is part of a phylum."@en .
+<http://kgoflife.aksw.org/ontology#partOfPhylum> <http://www.w3.org/2000/01/rdf-schema#label> "part of phylum"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSection
+<http://kgoflife.aksw.org/ontology#partOfSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Series> .
+<http://kgoflife.aksw.org/ontology#partOfSection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSection> .
+<http://kgoflife.aksw.org/ontology#partOfSection> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#Section> .
+<http://kgoflife.aksw.org/ontology#partOfSection> <http://www.w3.org/2000/01/rdf-schema#comment> "A subsection or series is part of a section."@en .
+<http://kgoflife.aksw.org/ontology#partOfSection> <http://www.w3.org/2000/01/rdf-schema#label> "part of section"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSeries
+<http://kgoflife.aksw.org/ontology#partOfSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSeries> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#partOfSeries> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSeries> .
+<http://kgoflife.aksw.org/ontology#partOfSeries> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#Series> .
+<http://kgoflife.aksw.org/ontology#partOfSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "A subseries or species is part of a series."@en .
+<http://kgoflife.aksw.org/ontology#partOfSeries> <http://www.w3.org/2000/01/rdf-schema#label> "part of series"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSpecies
+<http://kgoflife.aksw.org/ontology#partOfSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSpecies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSpecies> .
+<http://kgoflife.aksw.org/ontology#partOfSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#partOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "A subspecies is part of a species."@en .
+<http://kgoflife.aksw.org/ontology#partOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "part of species"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSubClass
+<http://kgoflife.aksw.org/ontology#partOfSubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSubClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraClass> .
+<http://kgoflife.aksw.org/ontology#partOfSubClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SubClass> .
+<http://kgoflife.aksw.org/ontology#partOfSubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A infraclass is part of a subclass."@en .
+<http://kgoflife.aksw.org/ontology#partOfSubClass> <http://www.w3.org/2000/01/rdf-schema#label> "part of subclass"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSubFamily
+<http://kgoflife.aksw.org/ontology#partOfSubFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSubFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#partOfSubFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperTribe> .
+<http://kgoflife.aksw.org/ontology#partOfSubFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Tribe> .
+<http://kgoflife.aksw.org/ontology#partOfSubFamily> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SubFamily> .
+<http://kgoflife.aksw.org/ontology#partOfSubFamily> <http://www.w3.org/2000/01/rdf-schema#comment> "A genus or Tribe/supertribe is part of a subfamily."@en .
+<http://kgoflife.aksw.org/ontology#partOfSubFamily> <http://www.w3.org/2000/01/rdf-schema#label> "part of subfamily"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSubGenus
+<http://kgoflife.aksw.org/ontology#partOfSubGenus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSubGenus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Section> .
+<http://kgoflife.aksw.org/ontology#partOfSubGenus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#partOfSubGenus> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SubGenus> .
+<http://kgoflife.aksw.org/ontology#partOfSubGenus> <http://www.w3.org/2000/01/rdf-schema#comment> "A species or section is part of a subgenus."@en .
+<http://kgoflife.aksw.org/ontology#partOfSubGenus> <http://www.w3.org/2000/01/rdf-schema#label> "part of subgenus"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSubKingdom
+<http://kgoflife.aksw.org/ontology#partOfSubKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSubKingdom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Phylum> .
+<http://kgoflife.aksw.org/ontology#partOfSubKingdom> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SubKingdom> .
+<http://kgoflife.aksw.org/ontology#partOfSubKingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "A phylum is part of a subkingdom."@en .
+<http://kgoflife.aksw.org/ontology#partOfSubKingdom> <http://www.w3.org/2000/01/rdf-schema#label> "part of subkingdom"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSubOrder
+<http://kgoflife.aksw.org/ontology#partOfSubOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSubOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraOrder> .
+<http://kgoflife.aksw.org/ontology#partOfSubOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SubOrder> .
+<http://kgoflife.aksw.org/ontology#partOfSubOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "A infraorder is part of a suborder."@en .
+<http://kgoflife.aksw.org/ontology#partOfSubOrder> <http://www.w3.org/2000/01/rdf-schema#label> "part of suborder"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSubPhylum
+<http://kgoflife.aksw.org/ontology#partOfSubPhylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSubPhylum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#partOfSubPhylum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperClass> .
+<http://kgoflife.aksw.org/ontology#partOfSubPhylum> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SubPhylum> .
+<http://kgoflife.aksw.org/ontology#partOfSubPhylum> <http://www.w3.org/2000/01/rdf-schema#comment> "A class is part of a subphylum."@en .
+<http://kgoflife.aksw.org/ontology#partOfSubPhylum> <http://www.w3.org/2000/01/rdf-schema#label> "part of subphylum"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSubSection
+<http://kgoflife.aksw.org/ontology#partOfSubSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSubSection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Series> .
+<http://kgoflife.aksw.org/ontology#partOfSubSection> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#partOfSubSection> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SubSection> .
+<http://kgoflife.aksw.org/ontology#partOfSubSection> <http://www.w3.org/2000/01/rdf-schema#comment> "A series or species is part of a subsection."@en .
+<http://kgoflife.aksw.org/ontology#partOfSubSection> <http://www.w3.org/2000/01/rdf-schema#label> "part of subsection"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSubSeries
+<http://kgoflife.aksw.org/ontology#partOfSubSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSubSeries> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#partOfSubSeries> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SubSeries> .
+<http://kgoflife.aksw.org/ontology#partOfSubSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "A species if part of a subseries."@en .
+<http://kgoflife.aksw.org/ontology#partOfSubSeries> <http://www.w3.org/2000/01/rdf-schema#label> "part of subseries"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSubSpecies
+<http://kgoflife.aksw.org/ontology#partOfSubSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSubSpecies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#partOfSubSpecies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Variety> .
+<http://kgoflife.aksw.org/ontology#partOfSubSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SubSpecies> .
+<http://kgoflife.aksw.org/ontology#partOfSubSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "A variety or form is part of a subspecies."@en .
+<http://kgoflife.aksw.org/ontology#partOfSubSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "part of subspecies"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSubTribe
+<http://kgoflife.aksw.org/ontology#partOfSubTribe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSubTribe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#partOfSubTribe> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SubTribe> .
+<http://kgoflife.aksw.org/ontology#partOfSubTribe> <http://www.w3.org/2000/01/rdf-schema#comment> "A genus is part of a subtribe."@en .
+<http://kgoflife.aksw.org/ontology#partOfSubTribe> <http://www.w3.org/2000/01/rdf-schema#label> "part of subtribe"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSubVariety
+<http://kgoflife.aksw.org/ontology#partOfSubVariety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSubVariety> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#partOfSubVariety> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SubVariety> .
+<http://kgoflife.aksw.org/ontology#partOfSubVariety> <http://www.w3.org/2000/01/rdf-schema#comment> "A form is part of a subvariety."@en .
+<http://kgoflife.aksw.org/ontology#partOfSubVariety> <http://www.w3.org/2000/01/rdf-schema#label> "part of subvariety"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSubterClass
+<http://kgoflife.aksw.org/ontology#partOfSubterClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSubterClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#partOfSubterClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperOrder> .
+<http://kgoflife.aksw.org/ontology#partOfSubterClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SubterClass> .
+<http://kgoflife.aksw.org/ontology#partOfSubterClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A order or parvclass is part of a subterclass."@en .
+<http://kgoflife.aksw.org/ontology#partOfSubterClass> <http://www.w3.org/2000/01/rdf-schema#label> "part of subterclass"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSuperClass
+<http://kgoflife.aksw.org/ontology#partOfSuperClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSuperClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#partOfSuperClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SuperClass> .
+<http://kgoflife.aksw.org/ontology#partOfSuperClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A class is part of a superclass."@en .
+<http://kgoflife.aksw.org/ontology#partOfSuperClass> <http://www.w3.org/2000/01/rdf-schema#label> "part of superclass"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSuperFamily
+<http://kgoflife.aksw.org/ontology#partOfSuperFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSuperFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#EpiFamily> .
+<http://kgoflife.aksw.org/ontology#partOfSuperFamily> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#partOfSuperFamily> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SuperFamily> .
+<http://kgoflife.aksw.org/ontology#partOfSuperFamily> <http://www.w3.org/2000/01/rdf-schema#comment> "A family or epifamily is part of a superfamily."@en .
+<http://kgoflife.aksw.org/ontology#partOfSuperFamily> <http://www.w3.org/2000/01/rdf-schema#label> "part of superfamily"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSuperOrder
+<http://kgoflife.aksw.org/ontology#partOfSuperOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSuperOrder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#partOfSuperOrder> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SuperOrder> .
+<http://kgoflife.aksw.org/ontology#partOfSuperOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "A order is part of a superorder."@en .
+<http://kgoflife.aksw.org/ontology#partOfSuperOrder> <http://www.w3.org/2000/01/rdf-schema#label> "part of superorder"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfSuperTribe
+<http://kgoflife.aksw.org/ontology#partOfSuperTribe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfSuperTribe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Tribe> .
+<http://kgoflife.aksw.org/ontology#partOfSuperTribe> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#SuperTribe> .
+<http://kgoflife.aksw.org/ontology#partOfSuperTribe> <http://www.w3.org/2000/01/rdf-schema#comment> "A subtribe or Genus is part of a tribe."@en .
+<http://kgoflife.aksw.org/ontology#partOfSuperTribe> <http://www.w3.org/2000/01/rdf-schema#label> "part of supertribe"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfTribe
+<http://kgoflife.aksw.org/ontology#partOfTribe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfTribe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#partOfTribe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubTribe> .
+<http://kgoflife.aksw.org/ontology#partOfTribe> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#Tribe> .
+<http://kgoflife.aksw.org/ontology#partOfTribe> <http://www.w3.org/2000/01/rdf-schema#comment> "A subtribe or Genus is part of a tribe."@en .
+<http://kgoflife.aksw.org/ontology#partOfTribe> <http://www.w3.org/2000/01/rdf-schema#label> "part of tribe"@en .
+# 
+# http://kgoflife.aksw.org/ontology#partOfVariety
+<http://kgoflife.aksw.org/ontology#partOfVariety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://kgoflife.aksw.org/ontology#partOfVariety> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#partOfVariety> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubVariety> .
+<http://kgoflife.aksw.org/ontology#partOfVariety> <http://www.w3.org/2000/01/rdf-schema#range> <http://kgoflife.aksw.org/ontology#Variety> .
+<http://kgoflife.aksw.org/ontology#partOfVariety> <http://www.w3.org/2000/01/rdf-schema#comment> "A subvariety or form is part of a variety."@en .
+<http://kgoflife.aksw.org/ontology#partOfVariety> <http://www.w3.org/2000/01/rdf-schema#label> "part of variety"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://kgoflife.aksw.org/ontology#ecosystem
+<http://kgoflife.aksw.org/ontology#ecosystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#ecosystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#ecosystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#ecosystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#ecosystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes if the species is a marine, terrestrial or freshwater species."@en .
+<http://kgoflife.aksw.org/ontology#ecosystem> <http://www.w3.org/2000/01/rdf-schema#label> "ecosystem"@en .
+# 
+# http://kgoflife.aksw.org/ontology#extinctionStatus
+<http://kgoflife.aksw.org/ontology#extinctionStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#extinctionStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#extinctionStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#extinctionStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://kgoflife.aksw.org/ontology#extinctionStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes if the species is extinct or not."@en .
+<http://kgoflife.aksw.org/ontology#extinctionStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Extinction status"@en .
+# 
+# http://kgoflife.aksw.org/ontology#infraSpecificEpithet
+<http://kgoflife.aksw.org/ontology#infraSpecificEpithet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#infraSpecificEpithet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#infraSpecificEpithet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#infraSpecificEpithet> <http://www.w3.org/2000/01/rdf-schema#comment> "The third part of a species scientific name."@en .
+<http://kgoflife.aksw.org/ontology#infraSpecificEpithet> <http://www.w3.org/2000/01/rdf-schema#label> "Infra-specific epiphet"@en .
+# 
+# http://kgoflife.aksw.org/ontology#location
+<http://kgoflife.aksw.org/ontology#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#location> <http://www.w3.org/2000/01/rdf-schema#comment> "The country or specific region a species is commonly found in."@en .
+<http://kgoflife.aksw.org/ontology#location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# http://kgoflife.aksw.org/ontology#nameAccordingTo
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#EpiFamily> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraClass> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraOrder> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Kingdom> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#ParvOrder> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Phylum> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Section> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Series> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubClass> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubFamily> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubForm> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubGenus> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubKingdom> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubOrder> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubPhylum> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSection> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSeries> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSpecies> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubTribe> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubVariety> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubterClass> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperClass> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperFamily> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperOrder> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperTribe> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Tribe> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Variety> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO."@en .
+<http://kgoflife.aksw.org/ontology#nameAccordingTo> <http://www.w3.org/2000/01/rdf-schema#label> "Name according to"@en .
+# 
+# http://kgoflife.aksw.org/ontology#namePublishedIn
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#EpiFamily> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraClass> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraOrder> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Kingdom> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#ParvOrder> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Phylum> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Section> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Series> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubClass> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubFamily> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubForm> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubGenus> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubKingdom> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubOrder> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubPhylum> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSection> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSeries> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSpecies> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubTribe> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubVariety> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubterClass> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperClass> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperFamily> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperOrder> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperTribe> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Tribe> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Variety> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The article/journal in which the name of the Taxon has been defined."@en .
+<http://kgoflife.aksw.org/ontology#namePublishedIn> <http://www.w3.org/2000/01/rdf-schema#label> "Name published in"@en .
+# 
+# http://kgoflife.aksw.org/ontology#nomenclaturalCode
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#EpiFamily> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraClass> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraOrder> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Kingdom> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#ParvOrder> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Phylum> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Section> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Series> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubClass> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubFamily> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubForm> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubGenus> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubKingdom> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubOrder> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubPhylum> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSection> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSeries> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSpecies> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubTribe> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubVariety> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubterClass> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperClass> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperFamily> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperOrder> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperTribe> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Tribe> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Variety> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#comment> "The nomenclatural code under which a scientific name is constructed."@en .
+<http://kgoflife.aksw.org/ontology#nomenclaturalCode> <http://www.w3.org/2000/01/rdf-schema#label> "Nomenclatural code"@en .
+# 
+# http://kgoflife.aksw.org/ontology#nomenclaturalStatus
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#EpiFamily> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraClass> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraOrder> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Kingdom> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#ParvOrder> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Phylum> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Section> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Series> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubClass> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubFamily> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubForm> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubGenus> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubKingdom> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubOrder> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubPhylum> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSection> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSeries> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSpecies> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubTribe> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubVariety> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubterClass> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperClass> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperFamily> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperOrder> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperTribe> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Tribe> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Variety> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO."@en .
+<http://kgoflife.aksw.org/ontology#nomenclaturalStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Nomenclatural status"@en .
+# 
+# http://kgoflife.aksw.org/ontology#occurrenceStatus
+<http://kgoflife.aksw.org/ontology#occurrenceStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#occurrenceStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#occurrenceStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#occurrenceStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#occurrenceStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the status between location and the species(e.g. 'native', TODO)."@en .
+<http://kgoflife.aksw.org/ontology#occurrenceStatus> <http://www.w3.org/2000/01/rdf-schema#label> "Occurrence status"@en .
+# 
+# http://kgoflife.aksw.org/ontology#references
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#EpiFamily> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraClass> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraOrder> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Kingdom> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#ParvOrder> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Phylum> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Section> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Series> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubClass> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubFamily> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubForm> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubGenus> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubKingdom> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubOrder> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubPhylum> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSection> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSeries> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSpecies> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubTribe> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubVariety> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubterClass> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperClass> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperFamily> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperOrder> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperTribe> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Tribe> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Variety> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#comment> "A related resource reference. TODO"@en .
+<http://kgoflife.aksw.org/ontology#references> <http://www.w3.org/2000/01/rdf-schema#label> "References"@en .
+# 
+# http://kgoflife.aksw.org/ontology#scientificName
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#EpiFamily> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraClass> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraOrder> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Kingdom> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#ParvOrder> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Phylum> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Section> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Series> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubClass> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubFamily> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubForm> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubGenus> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubKingdom> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubOrder> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubPhylum> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSection> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSeries> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSpecies> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubTribe> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubVariety> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubterClass> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperClass> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperFamily> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperOrder> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperTribe> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Tribe> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Variety> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#comment> "Given scientific name of a taxonomic rank."@en .
+<http://kgoflife.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific name"@en .
+# 
+# http://kgoflife.aksw.org/ontology#specificEpithet
+<http://kgoflife.aksw.org/ontology#specificEpithet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#specificEpithet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#specificEpithet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#specificEpithet> <http://www.w3.org/2000/01/rdf-schema#comment> "The second part of a species scientific name, usually following the name of a genus."@en .
+<http://kgoflife.aksw.org/ontology#specificEpithet> <http://www.w3.org/2000/01/rdf-schema#label> "Specific Epiphet"@en .
+# 
+# http://kgoflife.aksw.org/ontology#taxonRemarks
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#EpiFamily> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraClass> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraOrder> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Kingdom> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#ParvOrder> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Phylum> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Section> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Series> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubClass> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubFamily> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubForm> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubGenus> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubKingdom> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubOrder> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubPhylum> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSection> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSeries> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSpecies> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubTribe> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubVariety> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubterClass> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperClass> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperFamily> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperOrder> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperTribe> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Tribe> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Variety> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#comment> "Comments about the taxon or name."@en .
+<http://kgoflife.aksw.org/ontology#taxonRemarks> <http://www.w3.org/2000/01/rdf-schema#label> "Taxon remarks"@en .
+# 
+# http://kgoflife.aksw.org/ontology#taxonomicStatus
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#EpiFamily> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraClass> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraOrder> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Kingdom> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#ParvOrder> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Phylum> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Section> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Series> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubClass> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubFamily> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubForm> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubGenus> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubKingdom> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubOrder> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubPhylum> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSection> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSeries> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSpecies> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubTribe> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubVariety> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubterClass> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperClass> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperFamily> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperOrder> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperTribe> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Tribe> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Variety> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "TODO."@en .
+<http://kgoflife.aksw.org/ontology#taxonomicStatus> <http://www.w3.org/2000/01/rdf-schema#label> "TaxonomicStatus"@en .
+# 
+# http://kgoflife.aksw.org/ontology#vernacularName
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Class> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#EpiFamily> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Family> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Form> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Genus> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraClass> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#InfraOrder> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Kingdom> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Order> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#ParvOrder> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Phylum> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Section> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Series> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Species> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubClass> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubFamily> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubForm> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubGenus> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubKingdom> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubOrder> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubPhylum> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSection> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSeries> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubSpecies> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubTribe> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubVariety> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SubterClass> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperClass> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperFamily> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperOrder> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#SuperTribe> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Tribe> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Unranked> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://kgoflife.aksw.org/ontology#Variety> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#comment> "A common or vernacular name."@en .
+<http://kgoflife.aksw.org/ontology#vernacularName> <http://www.w3.org/2000/01/rdf-schema#label> "Vernacular name"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://kgoflife.aksw.org/ontology#Class
+<http://kgoflife.aksw.org/ontology#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Class> <http://www.w3.org/2000/01/rdf-schema#comment> "A class of life."@en .
+<http://kgoflife.aksw.org/ontology#Class> <http://www.w3.org/2000/01/rdf-schema#label> "Class"@en .
+# 
+# http://kgoflife.aksw.org/ontology#EpiFamily
+<http://kgoflife.aksw.org/ontology#EpiFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#EpiFamily> <http://www.w3.org/2000/01/rdf-schema#comment> "A epifamily of life. Used in zoology."@en .
+<http://kgoflife.aksw.org/ontology#EpiFamily> <http://www.w3.org/2000/01/rdf-schema#label> "EpiFamily"@en .
+# 
+# http://kgoflife.aksw.org/ontology#Family
+<http://kgoflife.aksw.org/ontology#Family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Family> <http://www.w3.org/2000/01/rdf-schema#comment> "A family of life."@en .
+<http://kgoflife.aksw.org/ontology#Family> <http://www.w3.org/2000/01/rdf-schema#label> "Family"@en .
+# 
+# http://kgoflife.aksw.org/ontology#Form
+<http://kgoflife.aksw.org/ontology#Form> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Form> <http://www.w3.org/2000/01/rdf-schema#comment> "A form of life. Used in botany."@en .
+<http://kgoflife.aksw.org/ontology#Form> <http://www.w3.org/2000/01/rdf-schema#label> "Form"@en .
+# 
+# http://kgoflife.aksw.org/ontology#Genus
+<http://kgoflife.aksw.org/ontology#Genus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Genus> <http://www.w3.org/2000/01/rdf-schema#comment> "A genus of life."@en .
+<http://kgoflife.aksw.org/ontology#Genus> <http://www.w3.org/2000/01/rdf-schema#label> "Genus"@en .
+# 
+# http://kgoflife.aksw.org/ontology#InfraClass
+<http://kgoflife.aksw.org/ontology#InfraClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#InfraClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A infraclass of life."@en .
+<http://kgoflife.aksw.org/ontology#InfraClass> <http://www.w3.org/2000/01/rdf-schema#label> "Infraclass"@en .
+# 
+# http://kgoflife.aksw.org/ontology#InfraOrder
+<http://kgoflife.aksw.org/ontology#InfraOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#InfraOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "A infraorder of life."@en .
+<http://kgoflife.aksw.org/ontology#InfraOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Infraorder"@en .
+# 
+# http://kgoflife.aksw.org/ontology#Kingdom
+<http://kgoflife.aksw.org/ontology#Kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Kingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "A kingdom of life."@en .
+<http://kgoflife.aksw.org/ontology#Kingdom> <http://www.w3.org/2000/01/rdf-schema#label> "Kingdom"@en .
+# 
+# http://kgoflife.aksw.org/ontology#Order
+<http://kgoflife.aksw.org/ontology#Order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Order> <http://www.w3.org/2000/01/rdf-schema#comment> "A order of life."@en .
+<http://kgoflife.aksw.org/ontology#Order> <http://www.w3.org/2000/01/rdf-schema#label> "Order"@en .
+# 
+# http://kgoflife.aksw.org/ontology#ParvOrder
+<http://kgoflife.aksw.org/ontology#ParvOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#ParvOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "A parvorder of life. Also referred to as microorder in zoology."@en .
+<http://kgoflife.aksw.org/ontology#ParvOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Parvorder"@en .
+# 
+# http://kgoflife.aksw.org/ontology#Phylum
+<http://kgoflife.aksw.org/ontology#Phylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Phylum> <http://www.w3.org/2000/01/rdf-schema#comment> "A phylum of life."@en .
+<http://kgoflife.aksw.org/ontology#Phylum> <http://www.w3.org/2000/01/rdf-schema#label> "Phylum"@en .
+# 
+# http://kgoflife.aksw.org/ontology#Section
+<http://kgoflife.aksw.org/ontology#Section> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Section> <http://www.w3.org/2000/01/rdf-schema#comment> "A section of life."@en .
+<http://kgoflife.aksw.org/ontology#Section> <http://www.w3.org/2000/01/rdf-schema#label> "Section"@en .
+# 
+# http://kgoflife.aksw.org/ontology#Series
+<http://kgoflife.aksw.org/ontology#Series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Series> <http://www.w3.org/2000/01/rdf-schema#comment> "A series of life. Used in botany."@en .
+<http://kgoflife.aksw.org/ontology#Series> <http://www.w3.org/2000/01/rdf-schema#label> "Series"@en .
+# 
+# http://kgoflife.aksw.org/ontology#Species
+<http://kgoflife.aksw.org/ontology#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Species> <http://www.w3.org/2000/01/rdf-schema#comment> "A species of life. Used in botany."@en .
+<http://kgoflife.aksw.org/ontology#Species> <http://www.w3.org/2000/01/rdf-schema#label> "Species"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubClass
+<http://kgoflife.aksw.org/ontology#SubClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A subclass of life."@en .
+<http://kgoflife.aksw.org/ontology#SubClass> <http://www.w3.org/2000/01/rdf-schema#label> "Subclass"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubFamily
+<http://kgoflife.aksw.org/ontology#SubFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubFamily> <http://www.w3.org/2000/01/rdf-schema#comment> "A subfamily of life."@en .
+<http://kgoflife.aksw.org/ontology#SubFamily> <http://www.w3.org/2000/01/rdf-schema#label> "Subfamily"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubForm
+<http://kgoflife.aksw.org/ontology#SubForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubForm> <http://www.w3.org/2000/01/rdf-schema#comment> "A subform of life. Used in botany."@en .
+<http://kgoflife.aksw.org/ontology#SubForm> <http://www.w3.org/2000/01/rdf-schema#label> "Subform"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubGenus
+<http://kgoflife.aksw.org/ontology#SubGenus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubGenus> <http://www.w3.org/2000/01/rdf-schema#comment> "A subgenus of life."@en .
+<http://kgoflife.aksw.org/ontology#SubGenus> <http://www.w3.org/2000/01/rdf-schema#label> "Subgenus"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubKingdom
+<http://kgoflife.aksw.org/ontology#SubKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubKingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "A subkingdom of life."@en .
+<http://kgoflife.aksw.org/ontology#SubKingdom> <http://www.w3.org/2000/01/rdf-schema#label> "Subkingdom"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubOrder
+<http://kgoflife.aksw.org/ontology#SubOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "A suborder of life."@en .
+<http://kgoflife.aksw.org/ontology#SubOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Suborder"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubPhylum
+<http://kgoflife.aksw.org/ontology#SubPhylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubPhylum> <http://www.w3.org/2000/01/rdf-schema#comment> "A subphylum of life."@en .
+<http://kgoflife.aksw.org/ontology#SubPhylum> <http://www.w3.org/2000/01/rdf-schema#label> "Subphylum"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubSection
+<http://kgoflife.aksw.org/ontology#SubSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubSection> <http://www.w3.org/2000/01/rdf-schema#comment> "A subsection of life. Used in botany."@en .
+<http://kgoflife.aksw.org/ontology#SubSection> <http://www.w3.org/2000/01/rdf-schema#label> "Subsection"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubSeries
+<http://kgoflife.aksw.org/ontology#SubSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "A subseries of life. Used in botany."@en .
+<http://kgoflife.aksw.org/ontology#SubSeries> <http://www.w3.org/2000/01/rdf-schema#label> "Subseries"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubSpecies
+<http://kgoflife.aksw.org/ontology#SubSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "A subspecies of life. Also referred to as forma specialis for fungi or pathovar for bacteria. Also formerly used term proles."@en .
+<http://kgoflife.aksw.org/ontology#SubSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "Subspecies"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubTribe
+<http://kgoflife.aksw.org/ontology#SubTribe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubTribe> <http://www.w3.org/2000/01/rdf-schema#comment> "A subtribe of life."@en .
+<http://kgoflife.aksw.org/ontology#SubTribe> <http://www.w3.org/2000/01/rdf-schema#label> "Subtribe"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubVariety
+<http://kgoflife.aksw.org/ontology#SubVariety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubVariety> <http://www.w3.org/2000/01/rdf-schema#comment> "A subvariety of life. Used in botany."@en .
+<http://kgoflife.aksw.org/ontology#SubVariety> <http://www.w3.org/2000/01/rdf-schema#label> "Subvariety"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SubterClass
+<http://kgoflife.aksw.org/ontology#SubterClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SubterClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A subterclass of life."@en .
+<http://kgoflife.aksw.org/ontology#SubterClass> <http://www.w3.org/2000/01/rdf-schema#label> "Subterclass"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SuperClass
+<http://kgoflife.aksw.org/ontology#SuperClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SuperClass> <http://www.w3.org/2000/01/rdf-schema#comment> "A superclass of life."@en .
+<http://kgoflife.aksw.org/ontology#SuperClass> <http://www.w3.org/2000/01/rdf-schema#label> "Superclass"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SuperFamily
+<http://kgoflife.aksw.org/ontology#SuperFamily> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SuperFamily> <http://www.w3.org/2000/01/rdf-schema#comment> "A superfamily of life."@en .
+<http://kgoflife.aksw.org/ontology#SuperFamily> <http://www.w3.org/2000/01/rdf-schema#label> "Superfamily"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SuperOrder
+<http://kgoflife.aksw.org/ontology#SuperOrder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SuperOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "A superorder of life."@en .
+<http://kgoflife.aksw.org/ontology#SuperOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Superorder"@en .
+# 
+# http://kgoflife.aksw.org/ontology#SuperTribe
+<http://kgoflife.aksw.org/ontology#SuperTribe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#SuperTribe> <http://www.w3.org/2000/01/rdf-schema#comment> "A supertribe of life."@en .
+<http://kgoflife.aksw.org/ontology#SuperTribe> <http://www.w3.org/2000/01/rdf-schema#label> "SuperTribe"@en .
+# 
+# http://kgoflife.aksw.org/ontology#Tribe
+<http://kgoflife.aksw.org/ontology#Tribe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Tribe> <http://www.w3.org/2000/01/rdf-schema#comment> "A tribe of life."@en .
+<http://kgoflife.aksw.org/ontology#Tribe> <http://www.w3.org/2000/01/rdf-schema#label> "Tribe"@en .
+# 
+# http://kgoflife.aksw.org/ontology#Unranked
+<http://kgoflife.aksw.org/ontology#Unranked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Unranked> <http://www.w3.org/2000/01/rdf-schema#comment> "A unranked taxa of life."@en .
+<http://kgoflife.aksw.org/ontology#Unranked> <http://www.w3.org/2000/01/rdf-schema#label> "Unranked"@en .
+# 
+# http://kgoflife.aksw.org/ontology#Variety
+<http://kgoflife.aksw.org/ontology#Variety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://kgoflife.aksw.org/ontology#Variety> <http://www.w3.org/2000/01/rdf-schema#comment> "A variety of life. Also referred to as form or morph in zoology or aberation in lepidopterology."@en .
+<http://kgoflife.aksw.org/ontology#Variety> <http://www.w3.org/2000/01/rdf-schema#label> "Variety"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

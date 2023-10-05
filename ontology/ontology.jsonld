@@ -1,0 +1,1867 @@
+[ {
+  "@id" : "http://kgoflife.aksw.org/ontology#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "KG of Life is facilitating the whole taxonomic tree of life into a semantic web usable version."
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@language" : "en",
+    "@value" : "Copyright © 2023 ChemNet"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "kglife: The data model for Catalogue of Life Knowledge Graph"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "kglife"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://kgoflife.aksw.org/ontology#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "SNAPSHOT"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Class",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Class"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#EpiFamily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A epifamily of life. Used in zoology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "EpiFamily"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Family",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A family of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Family"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Form",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A form of life. Used in botany."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Form"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Genus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A genus of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Genus"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#InfraClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A infraclass of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infraclass"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#InfraOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A infraorder of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infraorder"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Kingdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A kingdom of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Kingdom"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Order",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A order of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Order"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#ParvOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A parvorder of life. Also referred to as microorder in zoology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Parvorder"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Phylum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A phylum of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Phylum"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Section",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A section of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Section"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Series",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A series of life. Used in botany."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Series"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Species",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A species of life. Used in botany."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Species"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subclass of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subclass"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubFamily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subfamily of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subfamily"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubForm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subform of life. Used in botany."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subform"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubGenus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subgenus of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subgenus"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubKingdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subkingdom of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subkingdom"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A suborder of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Suborder"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubPhylum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subphylum of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subphylum"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subsection of life. Used in botany."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subsection"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subseries of life. Used in botany."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subseries"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubSpecies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subspecies of life. Also referred to as forma specialis for fungi or pathovar for bacteria. Also formerly used term proles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subspecies"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubTribe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subtribe of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subtribe"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubVariety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subvariety of life. Used in botany."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subvariety"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SubterClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subterclass of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subterclass"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SuperClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A superclass of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Superclass"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A superfamily of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Superfamily"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A superorder of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Superorder"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#SuperTribe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A supertribe of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SuperTribe"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Tribe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A tribe of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Tribe"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Unranked",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A unranked taxa of life."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Unranked"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#Variety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A variety of life. Also referred to as form or morph in zoology or aberation in lepidopterology."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Variety"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#ecosystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Describes if the species is a marine, terrestrial or freshwater species."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ecosystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#extinctionStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Describes if the species is extinct or not."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Extinction status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#infraSpecificEpithet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The third part of a species scientific name."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Infra-specific epiphet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The country or specific region a species is commonly found in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#nameAccordingTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "TODO."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#EpiFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Kingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#ParvOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Phylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Section"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Series"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubForm"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubGenus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubKingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubPhylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSection"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSeries"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSpecies"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubVariety"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubterClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Tribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Name according to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#namePublishedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The article/journal in which the name of the Taxon has been defined."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#EpiFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Kingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#ParvOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Phylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Section"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Series"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubForm"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubGenus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubKingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubPhylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSection"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSeries"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSpecies"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubVariety"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubterClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Tribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Name published in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#nomenclaturalCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The nomenclatural code under which a scientific name is constructed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#EpiFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Kingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#ParvOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Phylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Section"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Series"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubForm"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubGenus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubKingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubPhylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSection"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSeries"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSpecies"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubVariety"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubterClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Tribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nomenclatural code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#nomenclaturalStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "TODO."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#EpiFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Kingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#ParvOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Phylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Section"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Series"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubForm"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubGenus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubKingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubPhylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSection"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSeries"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSpecies"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubVariety"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubterClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Tribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nomenclatural status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#occurrenceStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Describes the status between location and the species(e.g. 'native', TODO)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Occurrence status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A order or subclass is part of a class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfEpiFamily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A family is part of a epifamily."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of epifamily"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#EpiFamily"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfFamily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A genus or subfamily is part of a family."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubFamily"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfForm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subform is part of a form."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubForm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of form"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfGenus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A species, subgenus or section is part of a genus."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Section"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubGenus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of genus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfInfraClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subterclass is part of a infraclass."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubterClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of infraclass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraClass"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfInfraOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A parvorder is part of a infraorder."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#ParvOrder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of infraorder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraOrder"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfKingdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A phylum or subkingdom is part of a kingdom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Phylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubKingdom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of kingdom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Kingdom"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A suborder, family or superfamily is part of a order."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfParvOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A family or superfamily is part of a parvorder."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of parvorder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#ParvOrder"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfPhylum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class or subphylum is part of a phylum."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubPhylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of phylum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Phylum"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subsection or series is part of a section."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Series"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of section"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Section"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subseries or species is part of a series."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSeries"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Series"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSpecies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subspecies is part of a species."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSpecies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSubClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A infraclass is part of a subclass."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of subclass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubClass"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSubFamily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A genus or Tribe/supertribe is part of a subfamily."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Tribe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of subfamily"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubFamily"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSubGenus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A species or section is part of a subgenus."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Section"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of subgenus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubGenus"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSubKingdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A phylum is part of a subkingdom."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Phylum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of subkingdom"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubKingdom"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSubOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A infraorder is part of a suborder."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraOrder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of suborder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubOrder"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSubPhylum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class is part of a subphylum."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of subphylum"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubPhylum"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSubSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A series or species is part of a subsection."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Series"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of subsection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSection"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSubSeries",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A species if part of a subseries."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of subseries"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSeries"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSubSpecies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A variety or form is part of a subspecies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of subspecies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSpecies"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSubTribe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A genus is part of a subtribe."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of subtribe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubTribe"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSubVariety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A form is part of a subvariety."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of subvariety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubVariety"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSubterClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A order or parvclass is part of a subterclass."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of subterclass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubterClass"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSuperClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A class is part of a superclass."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of superclass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperClass"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSuperFamily",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A family or epifamily is part of a superfamily."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#EpiFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of superfamily"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSuperOrder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A order is part of a superorder."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of superorder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfSuperTribe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subtribe or Genus is part of a tribe."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Tribe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of supertribe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperTribe"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfTribe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subtribe or Genus is part of a tribe."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubTribe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of tribe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Tribe"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#partOfVariety",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A subvariety or form is part of a variety."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubVariety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Variety"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#references",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A related resource reference. TODO"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#EpiFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Kingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#ParvOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Phylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Section"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Series"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubForm"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubGenus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubKingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubPhylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSection"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSeries"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSpecies"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubVariety"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubterClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Tribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "References"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#scientificName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Given scientific name of a taxonomic rank."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#EpiFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Kingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#ParvOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Phylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Section"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Series"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubForm"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubGenus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubKingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubPhylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSection"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSeries"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSpecies"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubVariety"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubterClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Tribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Scientific name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#specificEpithet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The second part of a species scientific name, usually following the name of a genus."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Specific Epiphet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#taxonRemarks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Comments about the taxon or name."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#EpiFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Kingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#ParvOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Phylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Section"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Series"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubForm"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubGenus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubKingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubPhylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSection"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSeries"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSpecies"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubVariety"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubterClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Tribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Taxon remarks"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#taxonomicStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "TODO."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#EpiFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Kingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#ParvOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Phylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Section"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Series"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubForm"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubGenus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubKingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubPhylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSection"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSeries"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSpecies"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubVariety"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubterClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Tribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "TaxonomicStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://kgoflife.aksw.org/ontology#vernacularName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A common or vernacular name."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://kgoflife.aksw.org/ontology#Class"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#EpiFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Family"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Form"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Genus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#InfraOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Kingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Order"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#ParvOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Phylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Section"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Series"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Species"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubForm"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubGenus"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubKingdom"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubPhylum"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSection"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSeries"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubSpecies"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubVariety"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SubterClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperClass"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperFamily"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperOrder"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#SuperTribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Tribe"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Unranked"
+  }, {
+    "@id" : "http://kgoflife.aksw.org/ontology#Variety"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vernacular name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

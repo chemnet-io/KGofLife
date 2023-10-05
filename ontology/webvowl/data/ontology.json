@@ -1,0 +1,1766 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://kgoflife.aksw.org/ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "kglife: The data model for Catalogue of Life Knowledge Graph"
+    },
+    "iri" : "http://kgoflife.aksw.org/ontology#",
+    "version" : "SNAPSHOT",
+    "author" : [ "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy" ],
+    "description" : {
+      "en" : "KG of Life is facilitating the whole taxonomic tree of life into a semantic web usable version."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "kglife",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright © 2023 ChemNet",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "SNAPSHOT",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://kgoflife.aksw.org/ontology#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "kglife: The data model for Catalogue of Life Knowledge Graph",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "instances" : 0,
+    "union" : [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Tribe",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tribe",
+      "en" : "Tribe"
+    },
+    "comment" : {
+      "en" : "A tribe of life."
+    },
+    "id" : "6"
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "28", "3" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "40"
+  }, {
+    "instances" : 0,
+    "union" : [ "13", "6", "8" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "41"
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "19" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "44"
+  }, {
+    "instances" : 0,
+    "union" : [ "21", "7" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "45"
+  }, {
+    "instances" : 0,
+    "union" : [ "16", "7" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "43"
+  }, {
+    "instances" : 0,
+    "union" : [ "15", "13" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "46"
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "22", "25" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "39"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "17", "16", "18", "19", "20", "21", "22", "23", "24", "26", "25", "27", "28", "31", "29", "30", "32", "33", "34" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "47"
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "9" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "48"
+  }, {
+    "instances" : 0,
+    "union" : [ "12", "3" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubVariety",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubVariety",
+      "en" : "Subvariety"
+    },
+    "comment" : {
+      "en" : "A subvariety of life. Used in botany."
+    },
+    "id" : "19"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Series",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Series",
+      "en" : "Series"
+    },
+    "comment" : {
+      "en" : "A series of life. Used in botany."
+    },
+    "id" : "23"
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "36"
+  }, {
+    "instances" : 0,
+    "union" : [ "27", "25" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "64"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "25" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Kingdom",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Kingdom",
+      "en" : "Kingdom"
+    },
+    "comment" : {
+      "en" : "A kingdom of life."
+    },
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubOrder",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubOrder",
+      "en" : "Suborder"
+    },
+    "comment" : {
+      "en" : "A suborder of life."
+    },
+    "id" : "33"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "25" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "67"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "2", "4", "3", "5", "6", "7", "9", "8", "10", "11", "12", "13", "14", "15", "17", "16", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "30", "29", "31", "32", "33", "34" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SuperClass",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SuperClass",
+      "en" : "Superclass"
+    },
+    "comment" : {
+      "en" : "A superclass of life."
+    },
+    "id" : "3"
+  }, {
+    "instances" : 0,
+    "union" : [ "21", "33", "7" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "81"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "17", "16", "18", "19", "20", "21", "23", "22", "24", "26", "25", "27", "28", "31", "29", "30", "32", "33", "34" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "82"
+  }, {
+    "instances" : 0,
+    "union" : [ "20", "34", "24" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "83"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "2", "3", "4", "5", "6", "7", "9", "8", "10", "11", "12", "13", "14", "15", "17", "16", "18", "19", "20", "21", "23", "22", "24", "26", "25", "27", "28", "31", "29", "30", "32", "33", "34" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "74"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "2", "3", "4", "5", "6", "7", "9", "8", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "30", "31", "29", "32", "33", "34" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "84"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "2", "3", "4", "5", "6", "7", "9", "8", "10", "11", "12", "13", "14", "15", "17", "16", "18", "19", "20", "21", "22", "23", "24", "26", "25", "27", "28", "29", "30", "31", "32", "33", "34" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Order",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Order",
+      "en" : "Order"
+    },
+    "comment" : {
+      "en" : "A order of life."
+    },
+    "id" : "24"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubFamily",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubFamily",
+      "en" : "Subfamily"
+    },
+    "comment" : {
+      "en" : "A subfamily of life."
+    },
+    "id" : "26"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubPhylum",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubPhylum",
+      "en" : "Subphylum"
+    },
+    "comment" : {
+      "en" : "A subphylum of life."
+    },
+    "id" : "28"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "25" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubForm",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubForm",
+      "en" : "Subform"
+    },
+    "comment" : {
+      "en" : "A subform of life. Used in botany."
+    },
+    "id" : "29"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubSpecies",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubSpecies",
+      "en" : "Subspecies"
+    },
+    "comment" : {
+      "en" : "A subspecies of life. Also referred to as forma specialis for fungi or pathovar for bacteria. Also formerly used term proles."
+    },
+    "id" : "30"
+  }, {
+    "instances" : 0,
+    "union" : [ "20", "24" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "86"
+  }, {
+    "instances" : 0,
+    "union" : [ "31", "23" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "60"
+  }, {
+    "instances" : 0,
+    "union" : [ "23", "25" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "92"
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "25" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "88"
+  }, {
+    "instances" : 0,
+    "union" : [ "13", "26" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "94"
+  }, {
+    "instances" : 0,
+    "union" : [ "2", "25" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "51"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "2", "4", "3", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "17", "16", "18", "19", "20", "21", "23", "22", "24", "25", "26", "27", "28", "30", "31", "29", "32", "33", "34" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "57"
+  }, {
+    "instances" : 0,
+    "union" : [ "1", "2", "4", "3", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "26", "25", "27", "28", "31", "30", "29", "32", "33", "34" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubterClass",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubterClass",
+      "en" : "Subterclass"
+    },
+    "comment" : {
+      "en" : "A subterclass of life."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Form",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Form",
+      "en" : "Form"
+    },
+    "comment" : {
+      "en" : "A form of life. Used in botany."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Variety",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Variety",
+      "en" : "Variety"
+    },
+    "comment" : {
+      "en" : "A variety of life. Also referred to as form or morph in zoology or aberation in lepidopterology."
+    },
+    "id" : "9"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SuperTribe",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SuperTribe",
+      "en" : "SuperTribe"
+    },
+    "comment" : {
+      "en" : "A supertribe of life."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#InfraOrder",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfraOrder",
+      "en" : "Infraorder"
+    },
+    "comment" : {
+      "en" : "A infraorder of life."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Genus",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Genus",
+      "en" : "Genus"
+    },
+    "comment" : {
+      "en" : "A genus of life."
+    },
+    "id" : "13"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#InfraClass",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfraClass",
+      "en" : "Infraclass"
+    },
+    "comment" : {
+      "en" : "A infraclass of life."
+    },
+    "id" : "18"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SuperFamily",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SuperFamily",
+      "en" : "Superfamily"
+    },
+    "comment" : {
+      "en" : "A superfamily of life."
+    },
+    "id" : "21"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Species",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Species",
+      "en" : "Species"
+    },
+    "comment" : {
+      "en" : "A species of life. Used in botany."
+    },
+    "id" : "25"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubSection",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubSection",
+      "en" : "Subsection"
+    },
+    "comment" : {
+      "en" : "A subsection of life. Used in botany."
+    },
+    "id" : "31"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubClass",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubClass",
+      "en" : "Subclass"
+    },
+    "comment" : {
+      "en" : "A subclass of life."
+    },
+    "id" : "34"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Unranked",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Unranked",
+      "en" : "Unranked"
+    },
+    "comment" : {
+      "en" : "A unranked taxa of life."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "112",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Phylum",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Phylum",
+      "en" : "Phylum"
+    },
+    "comment" : {
+      "en" : "A phylum of life."
+    },
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "114",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Family",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Family",
+      "en" : "Family"
+    },
+    "comment" : {
+      "en" : "A family of life."
+    },
+    "id" : "7"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#ParvOrder",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ParvOrder",
+      "en" : "Parvorder"
+    },
+    "comment" : {
+      "en" : "A parvorder of life. Also referred to as microorder in zoology."
+    },
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "107",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Class",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Class",
+      "en" : "Class"
+    },
+    "comment" : {
+      "en" : "A class of life."
+    },
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#Section",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Section",
+      "en" : "Section"
+    },
+    "comment" : {
+      "en" : "A section of life."
+    },
+    "id" : "14"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubTribe",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubTribe",
+      "en" : "Subtribe"
+    },
+    "comment" : {
+      "en" : "A subtribe of life."
+    },
+    "id" : "15"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#EpiFamily",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EpiFamily",
+      "en" : "EpiFamily"
+    },
+    "comment" : {
+      "en" : "A epifamily of life. Used in zoology."
+    },
+    "id" : "16"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubKingdom",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubKingdom",
+      "en" : "Subkingdom"
+    },
+    "comment" : {
+      "en" : "A subkingdom of life."
+    },
+    "id" : "17"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SuperOrder",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SuperOrder",
+      "en" : "Superorder"
+    },
+    "comment" : {
+      "en" : "A superorder of life."
+    },
+    "id" : "20"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubGenus",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubGenus",
+      "en" : "Subgenus"
+    },
+    "comment" : {
+      "en" : "A subgenus of life."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#SubSeries",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SubSeries",
+      "en" : "Subseries"
+    },
+    "comment" : {
+      "en" : "A subseries of life. Used in botany."
+    },
+    "id" : "27"
+  } ],
+  "property" : [ {
+    "id" : "35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "103",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "108",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "109",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "126",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfKingdom",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "partOfKingdom",
+      "en" : "part of kingdom"
+    },
+    "domain" : "36",
+    "comment" : {
+      "en" : "A phylum or subkingdom is part of a kingdom."
+    },
+    "attributes" : [ "object" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfInfraClass",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "partOfInfraClass",
+      "en" : "part of infraclass"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "A subterclass is part of a infraclass."
+    },
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfGenus",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "partOfGenus",
+      "en" : "part of genus"
+    },
+    "domain" : "39",
+    "comment" : {
+      "en" : "A species, subgenus or section is part of a genus."
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSuperFamily",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "partOfSuperFamily",
+      "en" : "part of superfamily"
+    },
+    "domain" : "43",
+    "comment" : {
+      "en" : "A family or epifamily is part of a superfamily."
+    },
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#location",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "location",
+      "en" : "Location"
+    },
+    "domain" : "51",
+    "comment" : {
+      "en" : "The country or specific region a species is commonly found in."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#nomenclaturalStatus",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "nomenclaturalStatus",
+      "en" : "Nomenclatural status"
+    },
+    "domain" : "54",
+    "comment" : {
+      "en" : "TODO."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#namePublishedIn",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "namePublishedIn",
+      "en" : "Name published in"
+    },
+    "domain" : "57",
+    "comment" : {
+      "en" : "The article/journal in which the name of the Taxon has been defined."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSection",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "partOfSection",
+      "en" : "part of section"
+    },
+    "domain" : "60",
+    "comment" : {
+      "en" : "A subsection or series is part of a section."
+    },
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#taxonomicStatus",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "taxonomicStatus",
+      "en" : "TaxonomicStatus"
+    },
+    "domain" : "62",
+    "comment" : {
+      "en" : "TODO."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSuperTribe",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "partOfSuperTribe",
+      "en" : "part of supertribe"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "A subtribe or Genus is part of a tribe."
+    },
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#specificEpithet",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "specificEpithet",
+      "en" : "Specific Epiphet"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "The second part of a species scientific name, usually following the name of a genus."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#taxonRemarks",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "taxonRemarks",
+      "en" : "Taxon remarks"
+    },
+    "domain" : "74",
+    "comment" : {
+      "en" : "Comments about the taxon or name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSubKingdom",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "partOfSubKingdom",
+      "en" : "part of subkingdom"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "A phylum is part of a subkingdom."
+    },
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSeries",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "partOfSeries",
+      "en" : "part of series"
+    },
+    "domain" : "64",
+    "comment" : {
+      "en" : "A subseries or species is part of a series."
+    },
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#ecosystem",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "ecosystem",
+      "en" : "ecosystem"
+    },
+    "domain" : "65",
+    "comment" : {
+      "en" : "Describes if the species is a marine, terrestrial or freshwater species."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSubTribe",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "partOfSubTribe",
+      "en" : "part of subtribe"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "A genus is part of a subtribe."
+    },
+    "attributes" : [ "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSubterClass",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "partOfSubterClass",
+      "en" : "part of subterclass"
+    },
+    "domain" : "86",
+    "comment" : {
+      "en" : "A order or parvclass is part of a subterclass."
+    },
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSubGenus",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "partOfSubGenus",
+      "en" : "part of subgenus"
+    },
+    "domain" : "88",
+    "comment" : {
+      "en" : "A species or section is part of a subgenus."
+    },
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfInfraOrder",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "partOfInfraOrder",
+      "en" : "part of infraorder"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "A parvorder is part of a infraorder."
+    },
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#vernacularName",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "vernacularName",
+      "en" : "Vernacular name"
+    },
+    "domain" : "84",
+    "comment" : {
+      "en" : "A common or vernacular name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSpecies",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "partOfSpecies",
+      "en" : "part of species"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "A subspecies is part of a species."
+    },
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfClass",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "partOfClass",
+      "en" : "part of class"
+    },
+    "domain" : "83",
+    "comment" : {
+      "en" : "A order or subclass is part of a class."
+    },
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#nameAccordingTo",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "nameAccordingTo",
+      "en" : "Name according to"
+    },
+    "domain" : "47",
+    "comment" : {
+      "en" : "TODO."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSubPhylum",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "partOfSubPhylum",
+      "en" : "part of subphylum"
+    },
+    "domain" : "49",
+    "comment" : {
+      "en" : "A class is part of a subphylum."
+    },
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSubSpecies",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "partOfSubSpecies",
+      "en" : "part of subspecies"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "A variety or form is part of a subspecies."
+    },
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfVariety",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "partOfVariety",
+      "en" : "part of variety"
+    },
+    "domain" : "44",
+    "comment" : {
+      "en" : "A subvariety or form is part of a variety."
+    },
+    "attributes" : [ "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfTribe",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "partOfTribe",
+      "en" : "part of tribe"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "A subtribe or Genus is part of a tribe."
+    },
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSubFamily",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "partOfSubFamily",
+      "en" : "part of subfamily"
+    },
+    "domain" : "41",
+    "comment" : {
+      "en" : "A genus or Tribe/supertribe is part of a subfamily."
+    },
+    "attributes" : [ "object" ],
+    "id" : "102"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSuperOrder",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "partOfSuperOrder",
+      "en" : "part of superorder"
+    },
+    "domain" : "24",
+    "comment" : {
+      "en" : "A order is part of a superorder."
+    },
+    "attributes" : [ "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfFamily",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "partOfFamily",
+      "en" : "part of family"
+    },
+    "domain" : "94",
+    "comment" : {
+      "en" : "A genus or subfamily is part of a family."
+    },
+    "attributes" : [ "object" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSubClass",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "partOfSubClass",
+      "en" : "part of subclass"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "A infraclass is part of a subclass."
+    },
+    "attributes" : [ "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#references",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "references",
+      "en" : "References"
+    },
+    "domain" : "82",
+    "comment" : {
+      "en" : "A related resource reference. TODO"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSubOrder",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "partOfSubOrder",
+      "en" : "part of suborder"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "A infraorder is part of a suborder."
+    },
+    "attributes" : [ "object" ],
+    "id" : "108"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#scientificName",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "scientificName",
+      "en" : "Scientific name"
+    },
+    "domain" : "68",
+    "comment" : {
+      "en" : "Given scientific name of a taxonomic rank."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#extinctionStatus",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "extinctionStatus",
+      "en" : "Extinction status"
+    },
+    "domain" : "67",
+    "comment" : {
+      "en" : "Describes if the species is extinct or not."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSubVariety",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "partOfSubVariety",
+      "en" : "part of subvariety"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "A form is part of a subvariety."
+    },
+    "attributes" : [ "object" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSubSeries",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "partOfSubSeries",
+      "en" : "part of subseries"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "A species if part of a subseries."
+    },
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfParvOrder",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "partOfParvOrder",
+      "en" : "part of parvorder"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "A family or superfamily is part of a parvorder."
+    },
+    "attributes" : [ "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfPhylum",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "partOfPhylum",
+      "en" : "part of phylum"
+    },
+    "domain" : "40",
+    "comment" : {
+      "en" : "A class or subphylum is part of a phylum."
+    },
+    "attributes" : [ "object" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfEpiFamily",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "partOfEpiFamily",
+      "en" : "part of epifamily"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "A family is part of a epifamily."
+    },
+    "attributes" : [ "object" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSuperClass",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "partOfSuperClass",
+      "en" : "part of superclass"
+    },
+    "domain" : "12",
+    "comment" : {
+      "en" : "A class is part of a superclass."
+    },
+    "attributes" : [ "object" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#nomenclaturalCode",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "nomenclaturalCode",
+      "en" : "Nomenclatural code"
+    },
+    "domain" : "0",
+    "comment" : {
+      "en" : "The nomenclatural code under which a scientific name is constructed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfSubSection",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "partOfSubSection",
+      "en" : "part of subsection"
+    },
+    "domain" : "92",
+    "comment" : {
+      "en" : "A series or species is part of a subsection."
+    },
+    "attributes" : [ "object" ],
+    "id" : "122"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#occurrenceStatus",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "occurrenceStatus",
+      "en" : "Occurrence status"
+    },
+    "domain" : "90",
+    "comment" : {
+      "en" : "Describes the status between location and the species(e.g. 'native', TODO)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfForm",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "partOfForm",
+      "en" : "part of form"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "A subform is part of a form."
+    },
+    "attributes" : [ "object" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#infraSpecificEpithet",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "112",
+    "label" : {
+      "IRI-based" : "infraSpecificEpithet",
+      "en" : "Infra-specific epiphet"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "The third part of a species scientific name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://kgoflife.aksw.org/ontology#partOfOrder",
+    "baseIri" : "http://kgoflife.aksw.org/ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "partOfOrder",
+      "en" : "part of order"
+    },
+    "domain" : "81",
+    "comment" : {
+      "en" : "A suborder, family or superfamily is part of a order."
+    },
+    "attributes" : [ "object" ],
+    "id" : "126"
+  } ]
+}
