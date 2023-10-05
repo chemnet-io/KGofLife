@@ -8,7 +8,7 @@ class IndexHeader extends HTMLElement {
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
         <a class="navbar-brand title font-weight-lighter" href="./index.html">
-           <span class="font-weight-bold">TEMPLATE[KG]</span>
+           <span class="font-weight-bold">[KG]ofLife</span>
         </a>
       <!-- Navbar Toggle -->
       <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse"
@@ -55,7 +55,7 @@ class IndexHeader extends HTMLElement {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://medium.com/@dinobbio" target="_blank">
+            <a class="nav-link" href="https://dinobbio.aksw.org/?lang=en" target="_blank">
               blog
             </a>
           </li>
@@ -138,7 +138,7 @@ class SubPageHeader extends HTMLElement {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://medium.com/@dinobbio" target="_blank">
+            <a class="nav-link" href="https://dinobbio.aksw.org/?lang=en" target="_blank">
               blog
             </a>
           </li>
@@ -206,7 +206,7 @@ class Footer extends HTMLElement {
         <!-- Footer -->
 <footer class="fixed-bottom">
     <div class="container mt-0">
-        © Copyright 2022 TEMPLATE[KG]
+        © Copyright 2023 [KG]ofLife
     </div>
 </footer>
       `
