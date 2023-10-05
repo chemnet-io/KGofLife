@@ -92,7 +92,7 @@ class SubPageHeader extends HTMLElement {
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
     <div class="container">
         <a class="navbar-brand title font-weight-lighter" href="../index.html">
-           <span class="font-weight-bold">TEMPLATE[KG]</span>
+           <span class="font-weight-bold">[KG]ofLife</span>
         </a>
       <!-- Navbar Toggle -->
       <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse"
